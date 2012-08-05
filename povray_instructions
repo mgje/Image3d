@@ -1,0 +1,146 @@
+[florian@nano-world florian]$ povray
+
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins.
+
+Primary POV-Ray 3.5 Developers: (Alphabetically)
+ Chris Cason         Thorsten Froehlich  Nathan Kopp         Ron Parker
+
+
+Primary POV-Ray 3.0 & 3.1 Developers: (Alphabetically)
+ Steve Anger         Dieter Bayer        Chris Dailey        Andreas Dilger
+
+ Steve Demlow        Alexander Enzmann   Dan Farmer          Eduard Schwan
+
+ Timothy Wegner      Chris Young
+
+Major Contributing Authors: (Alphabetically)
+ Steve A. Bennett    David K. Buck       Aaron A. Collins    Mark Gordon
+
+ Pascal Massimino    Jim McElhiney       Douglas Muir        Bill Pulver
+
+ Robert Skinner      Zsolt Szalavari     Scott Taylor        Drew Wells
+
+
+Other contributors listed in the documentation.
+
+Support libraries used by POV-Ray:
+ ZLib 1.1.4, Copyright 1995-1998 Jean-loup Gailly and Mark Adler
+ LibPNG 1.2.2, Copyright 2000, 2001 Glenn Randers-Pehrson
+ LibJPEG 6b, Copyright 1998 Thomas G. Lane
+ LibTIFF 3.5.7, Copyright 1988-1997 Sam Leffler, 1991-1997 Silicon Graphics, Inc
+.
+
+Usage: POVRAY [+/-]Option1 [+/-]Option2 ... (-h or -? for help)
+
+  Example: POVRAY scene.ini +Iscene.pov +Oscene.tga +W320 +H200
+  Example: POVRAY +Iscene.pov +Oscene.tga +W160 +H200 +V -D +X
+
+The help screen is divided into several parts. To access one part
+just enter the number of the screen after the -? option or the
+-help option.
+
+E.g. use -?5 or -help5 to see the help screen about the tracing
+options.
+
+  Number  Part
+    1     Parsing Options
+    2     Output Options
+    3     Output Options - display related
+    4     Output Options - file related
+    5     Tracing Options
+    6     Animation Options
+    7     Redirecting Options
+
+Parsing options
+
+  I<name> = input file name
+  HI<name>= header include file name
+  L<name> = library path prefix
+  MVn.n   = set compability to version n.n
+  SU      = split bounded unions if children are finite
+  UR      = remove unnecessary bounding objects
+
+Output options
+
+  Hnnn    = image height
+  Wnnn    = image width
+
+  SRnn    = start at row nn | SR0.nn start row at nn percent of screen
+  ERnn    = end   at row nn | ER0.nn end   row at nn percent of screen
+  SCnn    = start at col nn | SC0.nn start col at nn percent of screen
+  ECnn    = end   at col nn | EC0.nn end   col at nn percent of screen
+
+  C       = continue aborted trace
+  P       = pause before exit
+  V       = verbose messages on
+  Xnnn    = enable early exit by key hit (every nnn pixels)
+
+Output options - display related
+
+  Dxy     = display in format x, using palette option y
+  SPnnn   = Mosaic Preview display, Start grid size = 2, 4, 8, 16, ...
+  EPnnn   = Mosaic Preview display, End grid size   = 2, 4, 8, 16, ...
+  UD      = draw vista rectangles
+
+Output options - file related
+
+  Bnnn    = Use nnn KB for output file buffer
+  Fx      = write output file in format x
+            FC  - Compressed Targa with 24 or 32 bpp
+            FNn - PNG (n bits/color, n = 5 to 16, default is 8)
+            FP  - PPM
+            FS  - System specific
+            FT  - Uncompressed Targa with 24 or 32 bpp
+  O<name> = output file name
+
+  HTx     = write CPU utilization histogram in format x
+            HTC - Comma separated values (CSV - spreadsheet)
+            HTN - PNG grayscale
+            HTP - PPM heightfield
+            HTS - System specific
+            HTT - Uncompressed TGA heightfield
+            HTX - No histogram output
+  HN<name>= histogram filename
+  HSx.y   = histogram grid number of x, y divisions
+
+Tracing options
+
+  MBnnn   = use slabs if more than nnn objects
+  Qn      = image quality (0 = rough, 9 = full, R = radiosity)
+  QR      = enable radiosity calculations for ambient light
+
+  A0.n    = perform antialiasing
+  AMn     = use non-adaptive (n=1) or adaptive (n=2) supersampling
+  Jn.n    = set antialiasing-jitter amount
+  Rn      = set antialiasing-depth (use n X n rays/pixel)
+
+  UL      = use light buffer
+  UV      = use vista buffer
+
+Animation options
+
+  Kn.n      = set frame clock to n.n
+  KFInnn    = Initial frame number
+  KFFnnn    = Final frame number
+  KInnn.nn  = Initial clock value
+  KFnnn.nn  = Final clock value
+  SFnn      = Start subset at frame nn
+  SF0.nn    = Start subset nn percent into sequence
+  EFnn      = End subset at frame nn
+  EF0.n     = End subset nn percent into sequence
+  KC        = Calculate clock value for cyclic animation
+
+  UF        = use field rendering
+  UO        = use odd lines in odd frames
+
+Redirecting options
+
+  GI<name>= write all .INI parameters to file name
+  Gx<name>= write stream x to console and/or file name
+            GA - All streams (except status)
+            GD - Debug stream
+            GF - Fatal stream
+            GR - Render stream
+            GS - Statistics stream
+            GW - Warning stream
+[florian@nano-world florian]$

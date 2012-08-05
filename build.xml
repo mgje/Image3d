@@ -1,0 +1,110 @@
+<?xml version="1.0" ?> 
+<!--  ======================================================================= --> 
+<!--  			povWWW									                      --> 
+<!--  ======================================================================= --> 
+
+
+<project name="povWWW" default="jar" basedir=".">
+
+    <property name="name" value="image3d" />
+    <!-- property name="povApp.dir" value="/usr/local/share/povApp" / -->
+	<property name="povApp.dir" value="./povApp" />
+    
+	<property name="web.dir" value="rendernano" />
+    <property name="src.dir" value="src" />    <!-- where the source files are -->
+    <property name="build.dir" value="${web.dir}/WEB-INF/classes" />    <!-- where the compiled classes should go -->
+    <property name="lib.dir" value="${web.dir}/WEB-INF/lib" />    <!-- where the third party libs are -->
+	<property name="backup.dir" value="${web.dir}/src-backup" /> <!-- copy src folder there -->
+    <property name="wardist.dir" value="wardist" />     <!-- where the war file should go -->
+
+
+    <property name="tomcat.context" value="/tetrodo"/>
+    <property name="servlet.jar" value="/Users/guggisberg/dev/apache-tomcat-7.0.25/lib/servlet-api.jar" />
+	<property name="jsp.jar" value="/Users/guggisberg/dev/apache-tomcat-7.0.25/lib/jsp-api.jar" />
+
+    <path id="compile.class.path">
+    	<fileset dir="${lib.dir}">
+    		<include name="**/*.jar"/>
+    	</fileset>
+    	<pathelement path="${servlet.jar}"/>
+    	<pathelement path="${jsp.jar}"/>
+    </path>   
+ 
+
+<target name="compile" depends="prepare">
+     <javac srcdir="${src.dir}" 
+     		destdir="${build.dir}" 
+           	debug="on" 
+           	deprecation="on" 
+           	optimize="off"
+           	classpathref="compile.class.path">     
+    </javac>
+	<!-- also copy resources -->
+	<copy todir="${build.dir}">
+		<fileset dir="${src.dir}">
+			<include name ="**/*"/>
+		</fileset>
+	</copy>
+</target>
+
+
+
+<target name="jar" depends="compile">
+	<!--
+	<delete file="${backup.dir}/src.jar"/>
+	<jar jarfile="${backup.dir}/src.jar">
+		<fileset dir="${src.dir}"/>
+	</jar>
+	-->
+	<delete file="${web.dir}/povwww.jar"/>
+	<jar jarfile="${web.dir}/povwww.jar">
+		<fileset dir="${build.dir}"/>
+	</jar>
+
+	<delete file="${wardist.dir}/${name}.war"/>
+	<jar	jarfile="${wardist.dir}/${name}.war">
+		<fileset dir="${web.dir}"/>
+	</jar>
+
+</target>
+
+
+
+<target name="prepare">
+	
+	<copy todir="${povApp.dir}">
+			<fileset dir="${web.dir}/scripts">
+				<include name ="**/*.pov"/>
+				<include name ="**/*.ini"/>
+			</fileset>
+		</copy>
+	
+	
+	
+	
+	<mkdir dir="${build.dir}"/>
+	<mkdir dir="${wardist.dir}"/>
+</target>
+
+  
+
+
+<!--  ===================================================================  --> 
+<!--  Cleans up generated stuff                                            --> 
+<!--  ===================================================================  --> 
+<target name="clean">
+    <delete dir="${build.dir}" /> 
+    <delete dir="${wardist.dir}" /> 
+</target>
+
+
+<!--  ===================================================================  --> 
+<!--  Total cleanup                                                        --> 
+<!--  ===================================================================  --> 
+<target name="total-clean" depends="clean">
+    <delete file="${Name}_*.zip" quiet="true" /> 
+    <delete dir="${docs.dir}/api" />
+</target>
+ 
+</project>
+

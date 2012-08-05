@@ -1,0 +1,3 @@
+ParameterMatcher| Replacing "test1{}" with "Atest1"
+ParameterMatcher| Replacing "test2[]" with "Atest2"
+ParameterMatcher| Resulting TEXT: Atest1Atest2

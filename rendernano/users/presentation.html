@@ -1,0 +1,74 @@
+
+<html>
+
+<head>
+	<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8"/>
+	<title>Nano3d: Documentation</title>
+	<style type="text/css">
+		body{margin-left:5%;margin-right:5%;text-align:justify;}
+		p{font-family:Arial;font-size:12pt;}
+	</style>	
+</head>
+<body>
+<center>
+<div style="background-color:white;">
+<br>
+<img src="test2.jpg">
+<br>
+<br>
+<hr>
+</div>
+</center>
+
+
+<h2>TOC</h2>
+<ol>
+<li>Kurzbeschrieb
+<li>Innovationspunkte
+<li>Detaillierter Beschrieb
+</ol>
+
+<a name="briefDescription">
+<h2>Kurzbeschrieb</h2></a>
+
+<p>
+Nano3d schafft im Wesentlichen eine von Experten konfigurierbare Web-Schnittstelle zum 
+mächtigen Raytracing-Programm Povray. In Povray kann mithilfe einer relativ komplexen 
+Skriptsprache eine Welt modelliert werden. Vom einfachen Modell eines leeren Raumes mit 
+einer roten Kugel im Zentrum bis zu einer komplexen virtuellen Stadt ist alles denkbar. 
+</p>
+<p>
+Povray ist ein Expertentool. Für Laien, die die mächtigen Funktionen nutzen wollen, wäre 
+dies mit erheblichem Lernaufwand verbunden; für Benutzer, die noch überhaupt keine Erfahrung 
+im Umgang mit Skriptsprachen im Allgemeinen haben, für die also auch das Prinzip der textbasierten 
+Interaktion mit dem Computer nicht leicht nachvollziehbar ist, wäre der Aufwand immens. Der 
+Ansatz von Nano3d ist nun, die Generierung eines Skripts für eine spezielle Anwendung - 
+im demonstrierten Fall die Generation eines 3d-Bildes von einer Mikroskop-Messung aufgrund der Höheninformation, 
+die in der varierenden Lichtintensität des Originalbildes implizit enthalten ist - einem Experten in 
+Povray zu überlassen, das Skript aber gleichzeitig so zu gestalten, dass die Nutzer ohne Kentnisse in 
+Povray möglichst viele Einstellungen selber bestimmen können.
+</p>
+<p>
+Dies lässt sich anhand des Visualisierungs-Services veranschaulichen. Das Einlesen des Originalbildes, das 
+Erstellen eines Höhenfeldes und das Umwandeln dieser Informationen in ein neues Bild wird vom Experten im 
+Skript definiert. Er überlässt dem Benutzer aber die Wahl, von wo aus das 3d-Modell abgebildet wird, welche 
+Farben verwendet werden, wie stark skaliert wird etc. Der Visualisierungs-Service ist ein spezifischer, er 
+dürfte hauptsächlich für Leute interessant sein, die die Anschaulichkeit ihrer mikroskopischer Messungen 
+verbessern wollen, z.B. für einen Vortrag oder um den Studenten ein Molekül besser verständlich machen zu können.
+</p>
+
+
+
+<center>
+<img src="/home/florian/schema1nano3d.png" border=1>
+<br>
+<img src="/home/florian/schema2nano3d.png" border=1>
+</center>
+
+
+
+
+
+
+</body>
+</html>

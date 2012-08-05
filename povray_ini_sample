@@ -1,0 +1,14 @@
+
+Width = 320
+Height = 240
+Bounding_Threshold = 3
+Display=Off
+Verbose=On
+Library_Path="/usr/local/share/povray-3.6"
+Library_Path="/usr/local/share/povray-3.6/ini"
+Library_Path="/usr/local/share/povray-3.6/include"
+Library_Path=/usr/local/share/povray-3.5
+Library_Path=/usr/local/share/povray-3.5/include
+Output_to_File=true
+Output_File_Type=N8             ;; (+/-Ftype)
+

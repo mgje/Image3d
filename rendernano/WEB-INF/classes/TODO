@@ -1,0 +1,41 @@
+to do deutsches Museuum
+
+-StatusServlet
+
+
+
+
+
+
+old todo from florian
+
+mysql Login db
+vorgelagertes login, erst property file, dann mysql
+
+
+generierte Povray scripts martin schicken zum bearbeiten in povray
+
+
+
+nanobackup! (aut.)
+
+
+
+
+1. Measurements\Examples, für jeden zugänglich
+2. Exchange CookieId: jemandem den Link für die eigene Presentation schicken
+	--> nano3dcookie & nano3dviewcookie
+		ein cookie "linkt verzeichnis" rw, das andere nur r.
+3. Schutz für eigene Gallerie, z.b. Verbunden mit Login
+4. sämtliche Applet-Klassen müssen ungeschützt zugreifbar sein
+	-->sie sind es. filter auf /users/**, povwww.jar unter /povwww.jar
+	-->achtung: style.css nicht unter /users
+5. javaScript Kompatibilität prüfen
+6. in presentation für jedes Bild ein Link: create your own render version
+7. lastrenderedImage-Link in der Gallerie
+8. Distanz-Slider für Kameraposition (Distanz, Winkel)
+9. neue Farben von Martin
+	--> ok, labels noch verbessern, evtl. distanzberücksichtigung
+10. Z-Factor 1/2
+	--> ok, aber beschriftung noch mehr nach links rücken
+

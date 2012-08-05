@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+  "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>Nano3d Image Rendering: DEV</display-name>
+  
+  <!--TAGLIBS-->
+  	   
+	 <taglib>
+	    <taglib-uri>/taglibs/nanoTag.tld</taglib-uri>
+	    <taglib-location>/WEB-INF/taglibs/nanoTag.tld</taglib-location>
+	  </taglib>
+         
+  <!--SERVLETS-->
+  
+  
+  <servlet>
+  	<servlet-name>FileToUser</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.FileToUser</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ThumbnailToUser</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.ThumbnailToUser</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>FileToServer</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.FileToServer</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>StatusServlet</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.StatusServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Delete</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.Delete</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Render</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.Render</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>RenderAnimation</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.RenderMovie</servlet-class>
+  </servlet>
+   
+  <servlet>
+  	<servlet-name>RenderAVIAnimation</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.RenderAVIMovie</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateScript</servlet-name>
+  	<servlet-class>goodpractice.povwww.web.servlet.UpdateScript</servlet-class>
+  </servlet>
+  
+  <servlet>
+      <servlet-name>SetJob</servlet-name>
+      <servlet-class>goodpractice.povwww.web.servlet.SetJob</servlet-class>
+  </servlet>
+
+  <servlet>
+      <servlet-name>Emailer</servlet-name>
+      <servlet-class>goodpractice.povwww.web.servlet.EmailReminder</servlet-class>
+  </servlet>  
+  
+  <servlet>
+      <servlet-name>DefaultFileToUser</servlet-name>
+      <servlet-class>goodpractice.povwww.web.servlet.DefaultFileToUser</servlet-class>
+  </servlet>  
+
+
+  <!--FILTERS-->
+       
+	<filter>
+       <filter-name>cookie</filter-name>
+	   <filter-class>goodpractice.povwww.web.filter.CookieFilter</filter-class>
+    </filter>
+    
+    <filter>
+        <filter-name>properties</filter-name>
+        <filter-class>goodpractice.povwww.web.filter.PropertyFileFilter</filter-class>
+    </filter>
+ 
+ 
+ <!--MAPPINGS-->
+ 
+  <servlet-mapping>
+  	<servlet-name>FileToUser</servlet-name>
+  	<url-pattern>/users/FileToUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ThumbnailToUser</servlet-name>
+  	<url-pattern>/users/ThumbnailToUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  	<servlet-name>FileToServer</servlet-name>
+  	<url-pattern>/users/FileToServer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>StatusServlet</servlet-name>
+  	<url-pattern>/users/StatusServlet</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+  	<servlet-name>Delete</servlet-name>
+  	<url-pattern>/users/Delete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>Render</servlet-name>
+  	<url-pattern>/users/Render</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>RenderAnimation</servlet-name>
+  	<url-pattern>/users/RenderAnimation</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+  	<servlet-name>RenderAVIAnimation</servlet-name>
+  	<url-pattern>/users/RenderAVIAnimation</url-pattern>
+  </servlet-mapping>  
+  
+  <!--
+  <servlet-mapping>
+  	<servlet-name>UpdateScript</servlet-name>
+  	<url-pattern>/users/UpdateScript</url-pattern>
+  </servlet-mapping>
+  -->
+  
+  <servlet-mapping>
+      <servlet-name>SetJob</servlet-name>
+      <url-pattern>/users/SetJob</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+      <servlet-name>Emailer</servlet-name>
+      <url-pattern>/users/Emailer</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+      <servlet-name>DefaultFileToUser</servlet-name>
+      <url-pattern>/users/DefaultFileToUser</url-pattern>
+  </servlet-mapping>
+  
+ <!-- FILTER MAPPING -->
+ <!-- note: the cookie filter must be the last in the chain -->
+  
+
+    <filter-mapping>
+       <filter-name>properties</filter-name>
+       <url-pattern>/users/notinuse*</url-pattern>
+    </filter-mapping>
+    
+	<filter-mapping>
+      <filter-name>cookie</filter-name>
+      <url-pattern>/users/*</url-pattern>
+    </filter-mapping>
+ 
+
+</web-app>

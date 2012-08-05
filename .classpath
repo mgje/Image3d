@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/activation.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/commons-fileupload-1.0.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/imap.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/omnibrowse.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/pop3.jar"/>
+	<classpathentry kind="lib" path="rendernano/WEB-INF/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="/Users/guggisberg/dev/apache-tomcat-7.0.25/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Users/guggisberg/dev/apache-tomcat-7.0.25/lib/jsp-api.jar"/>
+	<classpathentry kind="output" path="rendernano/WEB-INF/classes"/>
+</classpath>

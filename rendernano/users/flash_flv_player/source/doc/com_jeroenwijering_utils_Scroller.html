@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Scroller</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <link rel="stylesheet" type="text/css" href="VisDoc.css"/>
+    <script src="doc.js" type="text/javascript">//</script>
+  </head>
+  <body pageId="Pagecom_jeroenwijering_utils_Scroller">
+    <div class="VisDoc"><span id="PageTop"><!----></span>
+      <div class="content"><span class="accessKeysInfo"><span class="label"><a href="#" class="accessKeyInfoToggle" onclick="toggleAccessKeyInfo(); return true;">Access keys</a></span><span class="accessKeyLinks" style="display:none;"><a href="#PageTop" accesskey="t">T</a>op, <a href="#Summary" accesskey="s">S</a>ummary, <a href="#Constructor" accesskey="c">C</a>onstructors, 
+Instance <a href="#Instanceproperties" accesskey="p">p</a>roperties, 
+Instance <a href="#Instancemethods" accesskey="m">m</a>ethods, <a href="#Eventhandlers" accesskey="e">E</a>vent handlers</span></span><h1>Scroller</h1>
+        <div class="classProperties">
+          <table cellspacing="0">
+            <tr>
+              <th>Kind of class:</th>
+              <td>class</td>
+            </tr>
+            <tr>
+              <th>Inherits from:</th>
+              <td>none</td>
+            </tr>
+            <tr>
+              <th class="classDetails">Version:</th>
+              <td class="classDetails">1.04</td>
+            </tr>
+            <tr>
+              <th class="classDetails">Author:</th>
+              <td class="classDetails">Jeroen Wijering</td>
+            </tr>
+            <tr>
+              <th class="classDetails">Classpath:</th>
+              <td class="classDetails">com.jeroenwijering.utils.Scroller</td>
+            </tr>
+            <tr>
+              <th class="classDetails">File last modified:</th>
+              <td class="classDetails">Monday, 20 November 2006, 17:14:22</td>
+            </tr>
+          </table>
+        </div>
+        <div class="classDescription">
+          <div class="descriptionSummary">Manages scrolling of a designated MovieClip, either automatic or through a scrollbar.</div><div class="classFields">
+            <div class="boxWithBorder">
+              <div class="boxedElem">
+                <div class="contentHolder"><span class="title">Example:</span><div class="item">var myScroller:Scroller = new com.jeroenwijering.utils.Scroller(myMovie,myMask);<br /> myscroller.scrollTo(200);</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary hasBottomDivider">
+          <h2 class="hasBottomDivider"><span id="Summary">Summary</span></h2>
+          <div class="methodList">
+            <div class="methodSummaryPart"><span class="title">Constructor</span><ul>
+                <li>
+                  <a href="#Scroller">Scroller</a>
+                </li>
+              </ul>
+            </div>
+            <div class="methodSummaryPart"><span class="title">Instance methods</span><ul>
+                <li>
+                  <a href="#scrollTo">scrollTo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="methodSummaryPart"><span class="title">Event handlers</span><ul>
+                <li>
+                  <a href="#onMouseWheel">onMouseWheel</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="methodSection">
+          <h2 class="hasBottomDivider"><span id="Constructor">Constructor</span></h2>
+          <div class="method hasBottomDivider">
+            <h3 id="Scroller">Scroller</h3>
+            <div class="fullMemberString">
+              <div class="clearfix floatholder">
+                <div class="floatbox code">function <b>Scroller</b> (
+
+
+
+
+</div>
+                <div><span class="code">tgt:MovieClip,
+msk:MovieClip,
+asc:Boolean,
+fcl:Number,
+hcl:Number)</span></div>
+              </div>
+            </div>
+            <div class="description">Sets up scrolling behaviour and scrollbar</div>
+            <div class="boxWithBorder">
+              <div class="boxedElem">
+                <div class="contentHolder"><span class="title">Parameters:</span><div class="item">
+                    <div class="floatbox code colorizedCode">tgt<span class="itemSeparator">:</span></div>
+                    <div>MovieClip that should be masked</div>
+                  </div>
+                  <div class="item">
+                    <div class="floatbox code colorizedCode">msk<span class="itemSeparator">:</span></div>
+                    <div>Movieclip that shoulld be used as mask</div>
+                  </div>
+                  <div class="item">
+                    <div class="floatbox code colorizedCode">asc<span class="itemSeparator">:</span></div>
+                    <div>(optional) Boolean for using autoscroll</div>
+                  </div>
+                  <div class="item">
+                    <div class="floatbox code colorizedCode">fcl<span class="itemSeparator">:</span></div>
+                    <div>(optional) scrollbar color</div>
+                  </div>
+                  <div class="item">
+                    <div class="floatbox code colorizedCode">hcl<span class="itemSeparator">:</span></div>
+                    <div>(optional) scrollbar rollover color</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="methodSection">
+          <h2 class="hasBottomDivider"><span id="Instancemethods">Instance methods</span></h2>
+          <div class="method hasBottomDivider">
+            <h3 id="scrollTo">scrollTo</h3>
+            <div class="fullMemberString">
+              <div class="clearfix floatholder">
+                <div class="floatbox code">function <b>scrollTo</b> (
+</div>
+                <div><span class="code">yps:Number) : Void</span></div>
+              </div>
+            </div>
+            <div class="description">Scroll the MovieClip to a given Y position.</div>
+            <div class="boxWithBorder">
+              <div class="boxedElem">
+                <div class="contentHolder"><span class="title">Parameters:</span><div class="item">
+                    <div class="floatbox code colorizedCode">yps<span class="itemSeparator">:</span></div>
+                    <div>The y position the clip should scroll to.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="methodSection">
+          <h2 class="hasBottomDivider"><span id="Eventhandlers">Event handlers</span></h2>
+          <div class="method hasBottomDivider">
+            <h3 id="onMouseWheel">onMouseWheel</h3>
+            <div class="fullMemberString">
+              <div class="clearfix floatholder">
+                <div class="floatbox code">function <b>onMouseWheel</b> (
+</div>
+                <div><span class="code">delta) : Void</span></div>
+              </div>
+            </div>
+            <div class="description">Set use of mousewheel to scroll playlist.</div>
+          </div>
+        </div>
+        <div class="footer"><span class="docFooter"><span class="createdWith">Created with <a href="http://visiblearea.com/visdoc/">VisDoc</a></span><span class="separator">|</span><span class="creationDate">Tuesday, 26 December 2006, 16:57:49</span><span class="separator">|</span><a href="#" onclick="showTOC(); return false;" class="showToc">show TOC</a><a href="#" onclick="hideTOC(); return false;" class="hideToc">hide TOC</a></span><span class="tocFooter"><a href="#" onclick="hideTOC(); return false;" class="hideToc">hide TOC</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

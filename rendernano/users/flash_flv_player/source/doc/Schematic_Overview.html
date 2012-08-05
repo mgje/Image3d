@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Schematic_Overview</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <link rel="stylesheet" type="text/css" href="VisDoc.css"/>
+    <script src="doc.js" type="text/javascript">//</script>
+  </head>
+  <body pageId="PageSchematic_Overview">
+    <div class="VisDoc"><span id="PageTop"><!----></span>
+      <div class="content"><span class="accessKeysInfo"><span class="label"><a href="#" class="accessKeyInfoToggle" onclick="toggleAccessKeyInfo(); return true;">Access keys</a></span><span class="accessKeyLinks" style="display:none;"><a href="#PageTop" accesskey="t">T</a>op, <a href="#Summary" accesskey="s">S</a>ummary, <a href="#Constructor" accesskey="c">C</a>onstructors</span></span><h1>Schematic_Overview</h1>
+        <div class="classProperties">
+          	<b>This is a general overview of the Flash Player's structure and inner communication.</b><br /><br />
+	          A player starts by instantiating any of the Player classes, which will load all config and file variables and set up the MCV cycle.<br /><br />
+	          The fileArray and configArray variables are used by each member of the MCV cycle for setup. Another file can be loaded through the loadFile() function, which is available both in actionscript and javascript.<br /><br />
+	          Communication between the MCV's members is strictly defined (with the updates, changes and events).<br /><br />
+	          Creating a complete new look for any of the players can be done by extending a new AbstractPlayer and AbstractView extension. The PlayerView class is a good AbstractView extension to copy and modify for this purpose. By just extending these, you also keep the ability the update your customized player whenever a new version of the regular player is released (just overwrite all other .as files).
+        </div>
+        <div class="classDescription">
+          <img src="schematics.gif" />
+        </div>
+        <div class="footer"><span class="docFooter"><span class="createdWith">Created with <a href="http://visiblearea.com/visdoc/">VisDoc</a></span><span class="separator">|</span><span class="creationDate">Tuesday, 26 December 2006, 16:57:49</span><span class="separator">|</span><a href="#" onclick="showTOC(); return false;" class="showToc">show TOC</a><a href="#" onclick="hideTOC(); return false;" class="hideToc">hide TOC</a></span><span class="tocFooter"><a href="#" onclick="hideTOC(); return false;" class="hideToc">hide TOC</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

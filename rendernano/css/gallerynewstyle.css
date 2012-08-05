@@ -1,0 +1,70 @@
+body
+{
+	background-color:white;
+	margin:0px;
+}
+span.title { font-size:14pt; font-weight:bold; font-family:Arial; background-color:whitesmoke; }
+#title { font-size:14pt; font-weight:bold; font-family:Arial; background-color:lightgrey; }
+td.left
+{
+	background-image:url("../images/div.jpg");
+	background-color:lightgrey;
+}
+
+td.left a { color:ff8b03; }
+#welcome { margin:5px; font-family:Arial; font-size:10pt; }
+#loginwelcome { font-family:Arial; font-size:10pt; }
+
+td.center
+{
+	font-family:Arial;
+	font-size:10pt;
+	background-color:whitesmoke;
+	 vertical-align: top; 
+}
+td.center div { margin:10px; vertical-align: middle;  }
+#measurements { font-family:Arial; font-size:10pt; }
+#measurements td{ margin: 0; padding: 0; border: 0; }
+#measurements a { color:black; font-family:Arial; font-weight:bold; font-size:10pt; text-decoration:none;  margin: 0; padding: 0; border: 0;}
+#measurements td.color { background-color:dedeff;  margin: 0; padding: 0; border: 0;}
+#measurements td.othercolor { background-color:lightgrey; margin: 0; padding: 0; border: 0; }
+#measurements tr:hover td { background-color:6699CC;  margin: 0; padding: 0; border: 0;}
+
+button {margin: 0; padding: 0; border: 0; background-color:transparent; border-style:none; width:32px; height:32px; }
+button img {margin-bottom:10%; margin-bottom:3em; margin: 0; padding: 0; border: 0; width:32px; height:32px; }
+#login { font-family:Arial; font-size:10pt; }
+
+input	{
+			background-color: #FFFFFF;
+			border-top: #404040 solid 1px; 
+			border-bottom: #404040 solid 1px; 
+			border-left: #404040 solid 1px; 
+			border-right: #404040 solid 1px;
+			color: #000000;
+			font-family: verdana,arial,helvetica,serifenlos,sans-serif;
+			font-size: 10px;
+			font-style: normal;
+			font-weight : normal;
+			padding-left: 2px;
+}
+
+td.right
+{
+	text-align:center;
+	background-image:url("../images/divnew.jpg");
+}
+td.right div { margin:10px; }
+#help { font-weight:bold; font-family:Arial; font-size:10pt; }
+#help table { font-weight:bold; font-family:Arial; font-size:10pt; }
+#examples { margin:5px; font-family:Arial; font-size:8pt; overflow:hidden; width:160px; }
+#examples a { font-family:Arial; font-size:10pt; color:black; }
+#renderedimages { margin:5px; font-family:Arial; font-size:8pt; overflow:hidden; width:160px; }
+#renderedimages a { font-family:Arial; font-size:10pt; color:black; }
+
+td.bar
+{
+	background-color:BBCCCC;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:9pt;
+}

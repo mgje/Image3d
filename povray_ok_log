@@ -1,0 +1,93 @@
+[florian@nano-world florian]$ /usr/local/bin/povray +L/usr/local/share/povray-3
+.5/include +I/usr/local/share/povApp/users/florian/script.pov +O/usr/local/shar
+e/povApp/users/florian/render_local.jpg
+Persistence of Vision(tm) Ray Tracer Version 3.5 Unix (.Linux.gcc)
+  This is an official version prepared by the POV-Ray Team. See the
+   documentation on how to contact the authors or visit us on the
+   internet at http://www.povray.org/.
+Copyright 1991-2002 POV-Ray Team(tm)
+Parsing Options
+  Input file: /usr/local/share/povApp/users/florian/script.pov (compatible to ve
+rsion 3.5)
+  Remove bounds........On  Split unions........Off
+  Library paths: /usr/local/share/povray-3.5
+    /usr/local/share/povray-3.5/include /usr/local/share/povray-3.5/include
+Output Options
+  Image resolution 320 by 240 (rows 1 to 240, columns 1 to 320).
+  Output file: /usr/local/share/povApp/users/florian/render_local.jpg, 24 bpp PN
+G
+  Graphic display......On  (type: 0, palette: 3, gamma:  2.2)
+  Mosaic preview......Off
+  CPU usage histogram.Off
+  Continued trace.....Off  Allow interruption..Off  Pause when done.....Off
+  Verbose messages.....On
+Tracing Options
+  Quality:  9
+  Bounding boxes.......On  Bounding threshold: 3
+  Light Buffer.........On  Vista Buffer.........On  Draw Vista Buffer...Off
+  Antialiasing........Off
+Animation Options
+  Clock value....   0.000  (Animation off)
+Redirecting Options
+  All Streams to console.........Off
+  Debug Stream to console.........On
+  Fatal Stream to console.........On
+  Render Stream to console........On
+  Statistics Stream to console....On
+  Warning Stream to console.......On
+
+
+Parsing.....
+
+Creating bounding slabs.
+Scene contains 1 frame level objects; 0 infinite.
+
+Displaying...
+  -:--:-- Rendering line    1 of  240.
+  -:--:-- Rendering line   11 of  240.
+  -:--:-- Rendering line   21 of  240.
+  -:--:-- Rendering line   31 of  240.
+  -:--:-- Rendering line   41 of  240.
+  -:--:-- Rendering line   51 of  240.
+  -:--:-- Rendering line   61 of  240.
+  -:--:-- Rendering line   71 of  240.
+  -:--:-- Rendering line   81 of  240.
+  -:--:-- Rendering line   91 of  240.
+  -:--:-- Rendering line  101 of  240.
+  -:--:-- Rendering line  111 of  240.                                   ..   .o
+  -:--:-- Rendering line  121 of  240.                                .... o. .
+  -:--:-- Rendering line  131 of  240.                                    oo..o
+  -:--:-- Rendering line  141 of  240.                                      ..
+  -:--:-- Rendering line  151 of  240.
+  -:--:-- Rendering line  161 of  240.
+  -:--:-- Rendering line  171 of  240.
+  -:--:-- Rendering line  181 of  240.
+  -:--:-- Rendering line  191 of  240.
+  -:--:-- Rendering line  201 of  240.
+  -:--:-- Rendering line  211 of  240.
+  -:--:-- Rendering line  221 of  240.
+  -:--:-- Rendering line  231 of  240.
+  -:--:-- Rendering line  240 of  240.
+Done Tracing
+Statistics for /usr/local/share/povApp/users/florian/script.pov, Resolution 320
+x 240
+----------------------------------------------------------------------------
+Pixels:           76800   Samples:           76800   Smpls/Pxl: 1.00
+Rays:             76800   Saved:                 0   Max Level: 1/5
+----------------------------------------------------------------------------
+Ray->Shape Intersection          Tests       Succeeded  Percentage
+----------------------------------------------------------------------------
+Height Field                     96392            9010      9.35
+Height Field Box                 96392           22168     23.00
+Height Field Triangle            96970           10066     10.38
+Height Field Block               64703           40037     61.88
+Height Field Cell               330039           59683     18.08
+----------------------------------------------------------------------------
+Calls to Noise:                  0   Calls to DNoise:             10
+----------------------------------------------------------------------------
+Shadow Ray Tests:            19592   Succeeded:                 7574
+----------------------------------------------------------------------------
+Smallest Alloc:                 10 bytes   Largest:            49160
+Peak memory used:           261906 bytes
+----------------------------------------------------------------------------
+[florian@nano-world florian]
